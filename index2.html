@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OmnAIScope - The Future of Vehicle Diagnostics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/reveal.js/dist/theme/black.css"
+      id="theme"
+    />
+    <link rel="stylesheet" href="main.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Confidentiality Notice -->
+        <section>
+          <h2>Confidentiality Notice</h2>
+          <p>
+            This presentation is strictly confidential and intended exclusively for the designated recipient.
+            Any disclosure or duplication is prohibited.
+          </p>
+        </section>
+
+        <!-- Chapter: Oscilloscopes in the Past -->
+        <section>
+          <section>
+            <h2>Oscilloscopes in the Past</h2>
+            <p>
+              In operation since 1897, yet hardly present in everyday life – why?
+            </p>
+            <img src="images/OsziAlt.png" alt="Old analog oscilloscope" />
+          </section>
+          <section>
+            <h2>Disadvantages of Old Oscilloscopes</h2>
+            <ul>
+              <li>Large, heavy, bulky</li>
+              <li>Complicated operation, trigger setting is a must</li>
+              <li>No digital data storage</li>
+              <li>Easily breaks</li>
+            </ul>
+          </section>
+          <section>
+            <h2></h2>
+            <ul>
+              <li>Time-consuming diagnostics – no direct data export possible</li>
+              <li>
+                No analysis software – no modern interface
+                for evaluation
+              </li>
+              <li>Data cannot be recalled</li>
+              <li>Requires a high level of prior knowledge</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- First slide with video -->
+        <section id="video-slide">
+          <video id="intro-video" width="100%" autoplay muted>
+            <source src="ScopesVideo.mkv" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+          <section>
+            <!-- Second slide: heading appears after video -->
+            <h2>OmnAIScope: Vehicle Diagnostics on the Engine</h2>
+            <p>Precise, simple, fle</p>
+          </section>
+        </section>
+
+        <!-- The OmnAIScope: today's oscilloscope -->
+        <section>
+          <section>
+            <h2>The OmnAIScope</h2>
+            <p>The oscilloscope of today, for your pocket</p>
+            <div class="slider-container">
+              <div class="slider">
+                <img
+                  class="slide slide-image-RawImages"
+                  src="images/OmnAIProduktBildFancy.png"
+                  alt="OmnAIScope oscilloscope"
+                />
+                <img
+                  class="slide slide-image-RawImages"
+                  src="images/Oszilloskop_Produktfoto_Freigestellt_5.png"
+                  alt="OmnAIScope oscilloscope"
+                />
+                <img
+                  class="slide slide-image-RawImages"
+                  src="images/Oszilloskop_Produktfoto_Freigestellt_schraeg_Oben.png"
+                  alt="OmnAIScope oscilloscope"
+                />
+                <img
+                  class="slide slide-image-RawImages"
+                  src="images/OmnAIScope_USB_Kabel_1.jpg"
+                  alt="OmnAIScope oscilloscope"
+                />
+              </div>
+              <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+              <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </section>
+          <section>
+            <h2>The Difference Compared to the Past</h2>
+            <div class="slider-container">
+              <div class="slider">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/OmnAIScopeKlein.png"
+                      alt="Oscilloscope comparison"
+                    />
+                    <div class="slide-text">
+                      <h3>Compact & mobile</h3>
+                      <p>
+                        The OmnAIScope is small, portable, and fits in any pocket.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <video width="50%" autoplay muted playsinline preload="auto">
+                      <source src="ScopeTest.mp4" type="video/mp4">
+                      Your browser does not support this video.
+                    </video>
+                    <div class="slide-text">
+                      <h3>Easy to Operate</h3>
+                      <p>No trigger setting, no knobs. Measure directly.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/SpeicherMenü.png"
+                      alt="Data analysis"
+                    />
+                    <div class="slide-text">
+                      <h3>Digital Data Acquisition</h3>
+                      <p>
+                        Store data and conveniently analyze them on your
+                        laptop or tablet.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/AlteMessungLaden.png"
+                      alt="Data analysis"
+                    />
+                    <div class="slide-text">
+                      <h3>Reuse Measurement Data</h3>
+                      <p>
+                        Recall measurement data, make it available to the customer,
+                        and share it with others.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/UpdateProzess.png"
+                      alt="Data analysis"
+                    />
+                    <div class="slide-text">
+                      <h3>Software Expansions</h3>
+                      <p>
+                        Stay up-to-date. Automatic, free
+                        software updates. Continuous improvement of analysis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/Datenanalyse.png"
+                      alt="Data analysis"
+                    />
+                    <div class="slide-text">
+                      <h3>Analysis without Prior Knowledge</h3>
+                      <p>
+                        Through comparison with the database—manually or AI-supported.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/MessungZweiScopes.png"
+                      alt="Data analysis"
+                    />
+                    <div class="slide-text">
+                      <h3>Expandable</h3>
+                      <p>
+                        Whether one, two, or eight channels—infinitely expandable
+                        via synchronization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="slide">
+                  <div class="slide-content">
+                    <img
+                      class="slide-image"
+                      src="images/OmnAIPISystem.jpg"
+                      alt="Data analysis"
+                    />
+                    <div class="slide-text">
+                      <h3>Coming Soon: Via Cable or Network</h3>
+                      <p>
+                        Receive data wherever you want, whenever you want,
+                        with the OmnAI-PI System.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Navigation -->
+              <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+              <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </section>
+          <section>
+            <h2>Technical Data</h2>
+            <img src="images/TechDatenOmnAI.png" alt="Technical data of OmnAIScope"/>
+          </section>
+        </section>
+
+        <!-- The problem with vehicle analysis -->
+        <section>
+          <section data-transition="zoom">
+            <h2>Why Analyze Directly on the Engine?</h2>
+            <p>The problem with current vehicle analysis</p>
+          </section>
+          <section>
+            <h2>The Current Diagnostic Process</h2>
+            <p>Error codes only provide a rough idea of where the error is located</p>
+            <div style="width: 100%; height: 400px; overflow: auto; border: 1px solid #ccc; padding: 10px; background: #f8f9fa;">
+              <div class="mermaid">
+                graph TD;
+                    A[Customer arrives with a defective car] --> B[Workshop reads out error code];
+                    B --> C{Options};
+                    C -->|Replace part| D[High costs];
+                    D --> E[1 week later – error not fixed];
+                    E --> F[Customer dissatisfied];
+                    F --> A;
+                    
+                    classDef error fill:#D9534F,stroke:#fff,stroke-width:2px,color:#fff;
+                    classDef warning fill:#F0AD4E,stroke:#fff,stroke-width:2px,color:#fff;
+
+                    class D error;
+                    class E error;
+                    class F error;
+                    class C warning;
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>The Improved Diagnostic Process</h2>
+            <div style="width: 100%; height: 400px; overflow: auto; border: 1px solid #ccc; padding: 10px; background: #f8f9fa;">
+              <div class="mermaid">
+                graph TD;
+                    A[Customer arrives with a defective car] --> B[Workshop reads out error code];
+                    B --> C{Options};
+                    C -->|Replace part| D[High costs];
+                    D --> E[1 week later – error not fixed];
+                    E --> F[Customer dissatisfied];
+                    F --> A;
+                    
+                    C -->|Error analysis| G[Workshop employee finds the exact problem];
+                    G --> H[They replace or repair the correct part];
+                    H --> I[Error verifiable];
+                    I --> J[One-time lower expenses];
+                    J --> K[Satisfied customer];
+
+                    classDef success fill:#44AA44,stroke:#fff,stroke-width:2px,color:#fff;
+                    classDef process fill:#007BFF,stroke:#fff,stroke-width:2px,color:#fff;
+
+                    class G process;
+                    class H process;
+                    class I success;
+                    class J success;
+                    class K success;
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- How the OmnAIScope impacts vehicle analysis -->
+        <section>
+          <section>
+            <h2>The OmnAIScope as a Vehicle Diagnostic Tool</h2>
+          </section>
+
+          <section>
+            <h2>The Workshop Concept</h2>
+            <div
+              style="
+                width: 100%;
+                height: 400px;
+                overflow: auto;
+                border: 1px solid #ccc;
+                padding: 10px;
+                background: #f8f9fa;
+              "
+            >
+              <div class="mermaid">
+                graph TD; OmnAIScopes --> Server; Server -.-> DataDisplay;
+                Server -.-> Storage; Server -.-> Analysis; Analysis -.-> DataDisplay;
+                DataDisplay -.-> Server;
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Functionality in Prerelease</h2>
+            <ul>
+              <li>Compact & mobile</li>
+              <li>Easy operation</li>
+              <li>Automatic data collection</li>
+              <li>Control via laptop/tablet</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Target Group in Prerelease</h2>
+            <ul>
+              <li>👨‍🔧 Workshop employees with oscilloscope experience</li>
+              <li>Trainees in automotive businesses</li>
+              <li>Vocational schools</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>The Release of OmnAIScope</h2>
+            <p>Functionality expansion next year:</p>
+            <ul>
+              <li>📱 <strong>Mobile control</strong></li>
+              <li>
+                🚗 <strong>Measurements while driving</strong> – recordings during
+                operation
+              </li>
+              <li>💾 <strong>Storage with reference images</strong></li>
+              <li>🩺 <strong>Digital vehicle file</strong></li>
+              <li>📊 <strong>Simple analyses</strong></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Target Group of the Release:</h2>
+            <ul>
+              <li>
+                🔧 Automotive employees regardless of oscilloscope experience
+              </li>
+              <li>Companies that repair instead of replace</li>
+              <li>Trainees, even in their first year</li>
+              <li>Skilled workers and trainees in the technical field</li>
+            </ul>
+          </section>
+          <section>
+            <h2>The Future of OmnAIScope</h2>
+            <p>The long-term version</p>
+            <p></p>
+            <ul>
+              <li>📱 <strong>AI-supported vehicle diagnostics</strong></li>
+              <li>
+                🚗 <strong>Expandable diagnostic devices</strong> – temperature,
+                electric field, vibration: all in one software
+              </li>
+              <li>💾 <strong>Intelligent support system</strong></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Long-Term Target Group of OmnAI</h2>
+            <ul>
+              <li>🔧 From experienced automotive mechanics to young trainees</li>
+              <li>Hobby mechanics, hobby tinkerers, vehicle owners</li>
+              <li>
+                Vehicle diagnostics is now easy, affordable, and feasible for everyone
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!--
+        <section>
+          <h2>The OmnAIScope in Action</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <video class="slide" controls>
+                <source src="video_2024-12-16_08-15-46.mp4" type="video/mp4">
+                <source src="videos/omnAIScope.webm" type="video/webm">
+                Your browser does not support this video format.
+              </video>
+              <img
+                class="slide slide-image-RawImages"
+                src="images/photo_2024-12-16_08-15-21.jpg"
+                alt="OmnAIScope oscilloscope measurement on a car"
+              />
+              <img
+                class="slide slide-image-RawImages"
+                src="images/Batterieaufnahme.png"
+                alt="OmnAIScope oscilloscope measurement on a car"
+              />
+              <img
+                class="slide slide-image-RawImages"
+                src="images/OmnAIAuto1.jpg"
+                alt="OmnAIScope oscilloscope measurement on a car"
+              />
+              <img
+                class="slide slide-image-RawImages"
+                src="images/OmnAIKofferEinsatz.jpg"
+                alt="OmnAIScope oscilloscope measurement on a car"
+              />
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+        </section>
+        -->
+        <section>
+          <section>
+            <h2>The OmnAIScope Network</h2>
+          </section>
+          <section>
+            <h2>Social Media and Forums</h2>
+            <div class="social-container">
+              <div class="social-icons">
+                <!--
+                <a href="https://www.instagram.com/deinprofil" target="_blank" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=61560779755069"
+                  target="_blank" title="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://x.com/Omnaiproject"
+                  target="_blank"
+                  title="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="forum-icons">
+                <a
+                  href="https://t.me/+VP3nU4hQN0AyMWIy"
+                  target="_blank"
+                  title="Telegram Channel"
+                >
+                  <i class="fab fa-telegram-plane"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2> Sales Advice </h2>
+            by phone at +49 234 585 458 13
+          </section>
+          <section class="partners">
+            <h2>OmnAIScope Dealers</h2>
+            <div class="partner-container">
+              <div class="partner">
+                <img src="images/reichelt.png" alt="Partner 1" />
+              </div>
+              <div class="partner">
+                <img src="images/K+KTuning.png" alt="Partner 2" />
+              </div>
+              <div class="partner">
+                <img src="images/ccd.jpg" alt="Partner 3" />
+              </div>
+            </div>
+          </section>
+          <section>
+            <p>
+              <strong>Important Information about OmnAIScope:</strong>
+            </p>
+            <div class="links">
+              <div class="links-container">
+                <div class="link">
+                  <p style="font-size: 0.3em;">Information</p>
+                  <a href="https://omnai-scope.auto-intern.de/" target="_blank">
+                    <img
+                      src="https://api.screenshotmachine.com?key=e32728&url=https%3A%2F%2Fomnai-scope.auto-intern.de%2F/&dimension=1024x768"
+                      alt="Screenshot of OmnAIScope page"
+                      style="width: 80%; border-radius: 10px;"
+                    >
+                  </a>
+                </div>
+                <div class="link">
+                  <p style="font-size: 0.3em;">Support</p>
+                  <a href="https://omnai-scope.auto-intern.de/" target="_blank">
+                    <img
+                      src="https://api.screenshotmachine.com?key=e32728&url=https%3A%2F%2Fomnai-scope.auto-intern.de/support%2F/&dimension=1024x768"
+                      alt="Screenshot of OmnAIScope page"
+                      style="width: 80%; border-radius: 10px;"
+                    >
+                  </a>
+                </div>
+                <div class="link">
+                  <p style="font-size: 0.3em;">Newsletter</p>
+                  <a href="https://omnai-scope.auto-intern.de/" target="_blank">
+                    <img
+                      src="https://api.screenshotmachine.com?key=e32728&url=https%3A%2F%2Fomnai-scope.auto-intern.de/newsletter%2F/&dimension=1024x768"
+                      alt="Screenshot of OmnAIScope page"
+                      style="width: 80%; border-radius: 10px;"
+                    >
+                  </a>
+                </div>
+                <div class="link">
+                  <p style="font-size: 0.3em;">Shop</p>
+                  <a href="https://omnai-scope.auto-intern.de/" target="_blank">
+                    <img
+                      src="https://api.screenshotmachine.com?key=e32728&url=https://www.auto-intern.de/shop/diagnose-komplettsysteme/281/omnaiscope-beta-version?c=114/support%2F/&dimension=1024x768"
+                      alt="Screenshot of OmnAIScope page"
+                      style="width: 80%; border-radius: 10px;"
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Offers -->
+        <section>
+          <section>
+            <h2>Our Offers</h2>
+            <p>Become an OmnAIScope dealer as well</p>
+          </section>
+          <section class="product-slide">
+            <div class="product">
+              <!-- Left area: image -->
+              <div class="product-image">
+                <img
+                  src="images/WerkstattkofferLight.jpg"
+                  alt="OmnAIScope Light case"
+                >
+              </div>
+              <!-- Right area: text -->
+              <div class="product-text">
+                <h3>OmnAIScope Light Case</h3>
+                <p><strong>RRP:</strong> €195.00</p>
+                <p style="font-size:0.6em;">Included:</p>
+                <ul>
+                  <li>1 x OmnAIScope</li>
+                  <li>1 x BNC to banana adapter</li>
+                  <li>1 x USB-C to USB-A cable</li>
+                  <li>1 x Case</li>
+                </ul>
+                <p><strong>Target group:</strong> Beginners, hobbyists</p>
+              </div>
+            </div>
+          </section>
+          <section class="product-slide">
+            <div class="product">
+              <!-- Left area: image -->
+              <div class="product-image">
+                <img
+                  src="images/OmnAIScopeKoffer.jpg"
+                  alt="Workshop Case Basic"
+                >
+              </div>
+              <!-- Right area: text -->
+              <div class="product-text">
+                <h3>OmnAIScope Workshop Case Basic</h3>
+                <p><strong>RRP:</strong> €220.65</p>
+                <p style="font-size:0.6em;">Included:</p>
+                <ul>
+                  <li>1 x OmnAIScope</li>
+                  <li>2 x Lab cables</li>
+                  <li>2 x Test probes</li>
+                  <li>2 x Piercing clamps</li>
+                  <li>1 x BNC to banana adapter</li>
+                  <li>1 x USB-C to USB-A cable</li>
+                  <li>1 x Case</li>
+                </ul>
+                <p><strong>Target group:</strong> Beginners, hobbyists, automotive businesses</p>
+              </div>
+            </div>
+          </section>
+          <section class="product-slide">
+            <div class="product">
+              <!-- Left area: image -->
+              <div class="product-image">
+                <img
+                  src="images/WerkstattKoffeDuo.jpg"
+                  alt="Workshop Case Duo"
+                >
+              </div>
+              <!-- Right area: text -->
+              <div class="product-text">
+                <h3>OmnAIScope Workshop Case Basic Duo</h3>
+                <p><strong>RRP:</strong> €394.99</p>
+                <p style="font-size:0.6em;">Included:</p>
+                <ul>
+                  <li>2 x OmnAIScope</li>
+                  <li>4 x Lab cables</li>
+                  <li>4 x Test probes</li>
+                  <li>4 x Piercing clamps</li>
+                  <li>2 x BNC to banana adapters</li>
+                  <li>2 x USB-C to USB-A cables</li>
+                  <li>1 x Case</li>
+                </ul>
+                <p><strong>Target group:</strong> Beginners, hobbyists, automotive businesses</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Dealer Prices & Tiered Prices</h2>
+            <p>The following tiered prices apply to dealers, depending on the quantity ordered:</p>
+            <ul>
+              <li><strong>1–10 units:</strong> 70% of RRP</li>
+              <li><strong>11–50 units:</strong> 65% of RRP</li>
+              <li><strong>51–100 units:</strong> 60% of RRP</li>
+              <li><strong>Over 100 units:</strong> 55% of RRP</li>
+            </ul>
+          </section>
+          <section>
+            <table>
+              <thead>
+                <tr>
+                  <th>Recommended Retail Price</th>
+                  <th>1–10 units (70%)</th>
+                  <th>11–50 units (65%)</th>
+                  <th>51–100 units (60%)</th>
+                  <th>Over 100 units (55%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>€195.00</td>
+                  <td>€136.50</td>
+                  <td>€126.75</td>
+                  <td>€117.00</td>
+                  <td>€107.25</td>
+                </tr>
+                <tr>
+                  <td>€220.65</td>
+                  <td>€154.46</td>
+                  <td>€143.42</td>
+                  <td>€132.39</td>
+                  <td>€121.36</td>
+                </tr>
+                <tr>
+                  <td>€394.99</td>
+                  <td>€276.50</td>
+                  <td>€256.74</td>
+                  <td>€236.99</td>
+                  <td>€217.24</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+
+        <!--
+        <section class="product-slide">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/ElektrikerKofferBild" alt="Workshop Case Basic">
+            </div>
+            <div class="product-text">
+              <h3>OmnAIScope Electrician Case Basic</h3>
+              <p><strong>Price:</strong> €199.99</p>
+              <p style="font-size:0.6em;">Included:</p>
+              <ul>
+                <li>1 x OmnAIScope</li>
+                <li>2 x Multimeter test leads</li>
+                <li>1 x BNC to banana adapter</li>
+                <li>1 x USB-C to USB-A cable</li>
+                <li>1 x Case</li>
+              </ul>
+              <p><strong>Target group:</strong> Electricians, circuit board testers, hobbyists</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-slide">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/OmnAIScopeKoffer.jpg" alt="Workshop Case Basic">
+            </div>
+            <div class="product-text">
+              <h3>OmnAIScope Electrician Case Basic Duo</h3>
+              <p><strong>Price:</strong> €349.99</p>
+              <p style="font-size:0.6em;">Included:</p>
+              <ul>
+                <li>2 x OmnAIScope</li>
+                <li>4 x Multimeter test leads</li>
+                <li>2 x BNC to banana adapters</li>
+                <li>2 x USB-C to USB-A cables</li>
+                <li>1 x Case</li>
+              </ul>
+              <p><strong>Target group:</strong> Beginners, hobbyists, automotive businesses</p>
+            </div>
+          </div>
+        </section>
+        -->
+      </section>
+
+      <section>
+        <h2 style="font-size: 1.0em;">Our Goal</h2>
+        <p style="font-size: 0.6em;">
+          Efficient, cost-saving, and precise vehicle diagnostics for every workshop.
+        </p>
+        <!-- Contact Person Area -->
+        <div class="ansprechpartner">
+          <h3>Your Contact Person</h3>
+          <div class="contacts-container">
+            <!-- Contact -->
+            <div class="contact">
+              <img src="images/AnnaBild.png" alt="Anna Theimann">
+              <h4>Anna Theimann</h4>
+              <p class="position">Product Manager OmnAIScope</p>
+              <p class="email">
+                <a href="mailto:anna.theimann@gruppe.ai">anna.theimann@gruppe.ai</a>
+              </p>
+              <p class="phone">+49 234 585 458 13</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- end .slides -->
+    </div> <!-- end .reveal -->
+
+    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.3/mermaid.min.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: "slide",
+      });
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sliders = document.querySelectorAll(".slider-container");
+
+        sliders.forEach((sliderContainer, index) => {
+          const slider = sliderContainer.querySelector(".slider");
+          const slides = sliderContainer.querySelectorAll(".slide");
+          const prevButton = sliderContainer.querySelector(".prev");
+          const nextButton = sliderContainer.querySelector(".next");
+
+          let slideIndex = 0;
+
+          function moveSlide(step) {
+            slideIndex += step;
+
+            if (slideIndex >= slides.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+
+            slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+          }
+
+          prevButton.addEventListener("click", () => moveSlide(-1));
+          nextButton.addEventListener("click", () => moveSlide(1));
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("intro-video");
+
+        // When the video ends, move to the next slide
+        video.addEventListener("ended", function () {
+          Reveal.next(); // proceeds to the next slide
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll('#testimonial-section .testimonial-slide');
+        let currentIndex = 0;
+
+        const prevButton = document.getElementById('testimonial-prev');
+        const nextButton = document.getElementById('testimonial-next');
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+          });
+        }
+
+        prevButton.addEventListener('click', function () {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+          showSlide(currentIndex);
+        });
+
+        nextButton.addEventListener('click', function () {
+          currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+          showSlide(currentIndex);
+        });
+    
+    // Optional: Automatisches Weiterschalten alle 5 Sekunden
+    setInterval(function () {
+      nextButton.click();
+    }, 5000);
+  });
+</script>
+</body>
+</html>
+       
